@@ -1,0 +1,13 @@
+{
+  "description": "Point sessions that start inside a Clarinet/Clarity project at the clarity:start skill.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear|compact",
+        "hooks": [
+          { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/clarity-context.sh\"" }
+        ]
+      }
+    ]
+  }
+}

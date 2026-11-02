@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Assets"
+  short_description: "Integrate native Clarity assets and wrappers"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-assets to verify asset identity, spendable balances and transfer authorization in this flow."

@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Keeps the pinned actions in validate.yml current. The Claude Code version the workflow installs is not
+  # covered: bump it by hand.
+  - package-ecosystem: github-actions
+    directory: /
+    target-branch: develop
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "CI"

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "clarity",
+  "version": "1.0.0",
+  "description": "Focused Clarity and Stacks skills for development, security, testing, fuzzing, wallets, environments, protocol integration, Bitcoin, deployment, governance, upgrades and SIP compliance.",
+  "author": {
+    "name": "Cyba Blockchain Security",
+    "url": "https://cybasecurity.io/",
+    "email": "contact@cybasecurity.io"
+  },
+  "homepage": "https://cybasecurity.io/",
+  "repository": "https://github.com/cybasecurity/clarity-skills",
+  "license": "MIT",
+  "keywords": [
+    "clarity",
+    "stacks",
+    "smart-contracts",
+    "security",
+    "sbtc",
+    "sip",
+    "fuzzing",
+    "rendezvous"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Clarity skills",
+        "shortDescription": "Build and secure Clarity code",
+        "longDescription": "A start router plus twenty-one focused Clarity skills with on-demand references, version-specific corrections, Clarigen testing, Rendezvous fuzzing, wallet and environment compatibility, refreshed address registries, protocol recipes, Bitcoin proofs, upgrade and governance patterns, and deployment guidance.",
+        "developerName": "Cyba Blockchain Security",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://cybasecurity.io/research/clarity-skills",
+        "privacyPolicyURL": "https://cybasecurity.io/privacy-policy",
+        "defaultPrompt": [
+          "Review this Clarity contract for caller, trait, and asset-handling issues.",
+          "Help me build a verified Stacks protocol integration.",
+          "Measure this Clarity transaction and reduce its limiting execution cost."
+        ],
+        "brandColor": "#B47514",
+        "composerIcon": "./assets/composer-icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

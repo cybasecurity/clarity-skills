@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Optimizer"
+  short_description: "Measure and reduce Clarity execution costs"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-optimizer to measure this operation and reduce its limiting execution cost."

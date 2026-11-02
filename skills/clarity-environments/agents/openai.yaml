@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Environments"
+  short_description: "Reproduce simnet and network differences"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-environments to explain this simnet versus mainnet failure and build a reproducible validation plan."

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Scholar"
+  short_description: "Write idiomatic, version-aware Clarity"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-scholar to refactor this Clarity contract while preserving its observable behavior."

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Governance"
+  short_description: "Design Clarity governance and multisigs"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity:governance to design the approval, execution and signer model for this protocol."

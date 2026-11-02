@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Ecosystem"
+  short_description: "Compose verified Clarity protocol integrations"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-ecosystem to build this multi-protocol flow using verified interfaces and permissions."

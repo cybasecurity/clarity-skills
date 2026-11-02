@@ -1,0 +1,39 @@
+name: Addition request
+description: Ask for a new protocol integration, skill, host or other addition to the Clarity skills.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a mistake in an existing skill, use the bug report form instead.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of addition
+      options:
+        - A protocol or contract integration
+        - A new skill or topic
+        - Support for another host
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: What you need
+      description: The task you want the skills to handle, and what an agent gets wrong or cannot do today without it.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: The documentation, specification, source code or deployed contracts the addition should follow. For a protocol, its official repository and contract addresses.
+    validations:
+      required: true
+  - type: input
+    id: related
+    attributes:
+      label: Related skills
+      description: Existing skills the addition touches, if you know them.
+      placeholder: clarity:protocols, clarity:ecosystem

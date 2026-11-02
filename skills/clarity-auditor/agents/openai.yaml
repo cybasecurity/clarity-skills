@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Auditor"
+  short_description: "Audit Clarity contracts with scoped evidence"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-auditor to audit this Clarity contract for reachable security issues."

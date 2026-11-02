@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Upgrades"
+  short_description: "Plan Clarity upgrades and safe migrations"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity:upgrades to design this protocol upgrade while preserving custody, accounting, token identity and pending exits."

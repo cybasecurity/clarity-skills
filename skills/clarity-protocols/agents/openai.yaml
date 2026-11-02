@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Protocols"
+  short_description: "Find protocol interfaces and verified addresses"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-protocols to resolve the current addresses and interfaces for this integration."

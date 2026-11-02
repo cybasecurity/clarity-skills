@@ -1,0 +1,6 @@
+{
+  "name": "clarity",
+  "version": "1.0.0",
+  "description": "Focused Clarity and Stacks skills for development, security, testing, fuzzing, wallets, environments, protocol integration, Bitcoin, deployment, governance, upgrades and SIP compliance.",
+  "contextFileName": "GEMINI.md"
+}

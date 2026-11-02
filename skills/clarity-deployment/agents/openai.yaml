@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Deployment"
+  short_description: "Deploy and initialize Clarity protocols"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-deployment to prepare this protocol release and verify initialization."

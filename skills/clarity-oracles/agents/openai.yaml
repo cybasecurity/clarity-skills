@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Oracles"
+  short_description: "Integrate and test Clarity price oracles"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-oracles to integrate Pyth Lazer through this protocol's own verifier instance, with realistic signed fixtures."

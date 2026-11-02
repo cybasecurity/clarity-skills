@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Epochs"
+  short_description: "Resolve Clarity versions and epoch behavior"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-epochs to check which Clarity and epoch behaviors apply to this contract."

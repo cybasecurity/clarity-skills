@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/cybasecurity/clarity-skills/security/policy
+    about: Report it privately as the security policy describes, never in a public issue.
+  - name: Questions and other inquiries
+    url: https://t.me/CybaSecurity
+    about: Questions about using the skills, on Telegram or at contact@cybasecurity.io. Vulnerabilities go through the security policy, not here.

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Fuzzing"
+  short_description: "Fuzz Clarity properties and invariants with Rendezvous"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-fuzzing to build a Rendezvous campaign for this protocol, verify meaningful execution and reproduce failures."

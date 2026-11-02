@@ -1,0 +1,42 @@
+# Granite addresses
+
+- Recheck mutable configuration before integration; follow [freshness rules](../../SKILL.md#addresses-and-freshness).
+- [All protocols](../addresses.md).
+
+- Use the live USDCx rows: what `state-v1` allows or selects, the contracts those call, and the read-only `utility` below. The market's logic and state span two deployers. SPSX722... holds the entrypoints, governance and their modules. SP3M2BY... holds `state-v1` and shared contracts the live logic still calls, including `meta-governance-v1` (governance membership) and `staking-reward-v1`. Rows labelled historical are older SP3M2BY... logic from the official contracts page. Live contracts do not call them, and `state-v1` rejects the old borrower, liquidity provider, liquidator and staking.
+- The current flash-loan endpoint still takes its callback trait from the old deployer SP3M2BY.... It lends USDCx only; sBTC collateral support does not make it an sBTC lender. Exact principals: [Granite recipe](../granite.md#granite).
+- Deprecated: the aeUSDC market closes by 2026-11-03 ([announcement](https://x.com/GraniteBTC/status/2115575726975922272)). Its rows remain only so open positions can exit and reopen in USDCx.
+- The repository's `.mock-usdc` is a test dependency. Use [deployed asset/callback rules](../granite.md#granite).
+- The row labelled `historical pyth-adapter-v1 (Pyth Core)` is a legacy Pyth Core adapter. The live borrower and liquidator call SPSX722... `pyth-adapter-v1`, which verifies Pyth Lazer updates; see the [oracle path](../granite.md#granite-oracle-path). Granite's own Lazer instance is under [Pyth Lazer](pyth-lazer.md).
+- The `utility` row under SPDMQAB... is a read-only USDCx helper, not an entrypoint. Its `get-market-state` returns balances, the asset cap and totals with interest accrued to now; its cap reads are in [withdrawal caps](../granite.md#granite-withdrawal-caps). Other `utility` contracts exist under SPSX722..., SP3M2BY... and other deployers; use the SPDMQAB... row.
+- Granite also runs staging markets on mainnet with real assets. The staging USDCx market under SP2N615... has its own `state-v1`, entrypoints, governance and `utility`. Older staging plans in the repository name other deployers. Never use staging contracts for production calls.
+- The pinned repository revision is newer than the production logic: its `borrower-v1`, `liquidator-v1` and `withdrawal-caps-v1` differ from the deployed contracts. Read the deployed source for production behavior.
+
+- Discovery: [official contracts](https://docs.granite.world/protocol-information/contracts); [deployment plans](https://github.com/GraniteProtocol/core-v1/tree/2d44a2df94a5bebe80029efa5ed03f720b255f4b/deployments).
+
+| Network | Protocol | Contract ID |
+|---|---|---|
+| Mainnet | Granite: USDCx borrower-v1 | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.borrower-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.borrower-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx flash-loan-v1 | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.flash-loan-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.flash-loan-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx governance-v1 | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.governance-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.governance-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx liquidator-v1 | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.liquidator-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.liquidator-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx liquidity-provider-v1 | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.liquidity-provider-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.liquidity-provider-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx linear-kinked-ir-v1 | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.linear-kinked-ir-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.linear-kinked-ir-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx pyth-adapter-v1 (Pyth Lazer) | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.pyth-adapter-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.pyth-adapter-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx staking-v1 | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.staking-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.staking-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx withdrawal-caps-v1 | [SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.withdrawal-caps-v1](https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.withdrawal-caps-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx state-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.state-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.state-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx meta-governance-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.meta-governance-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.meta-governance-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx staking-reward-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.staking-reward-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.staking-reward-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx read-only utility | [SPDMQABVKKDVZ25MYCQ0ZW90QWERMZFWT02QP1Q4.utility](https://explorer.hiro.so/txid/SPDMQABVKKDVZ25MYCQ0ZW90QWERMZFWT02QP1Q4.utility?chain=mainnet&tab=overview) |
+| Mainnet | Granite: deprecated aeUSDC market borrower-v1 (closes 2026-11-03; repay to exit) | [SP119QJ4NVE3RQP8RXJVW5EXAV3XD4CJZWRCEEAAR.borrower-v1](https://explorer.hiro.so/txid/SP119QJ4NVE3RQP8RXJVW5EXAV3XD4CJZWRCEEAAR.borrower-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: deprecated aeUSDC market liquidity-provider-v1 (closes 2026-11-03; redeem to exit) | [SP119QJ4NVE3RQP8RXJVW5EXAV3XD4CJZWRCEEAAR.liquidity-provider-v1](https://explorer.hiro.so/txid/SP119QJ4NVE3RQP8RXJVW5EXAV3XD4CJZWRCEEAAR.liquidity-provider-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: deprecated aeUSDC market state-v1 (closes 2026-11-03) | [SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.state-v1](https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.state-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx historical borrower-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.borrower-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.borrower-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx historical governance-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.governance-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.governance-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx historical linear-kinked-ir-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.linear-kinked-ir-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.linear-kinked-ir-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx historical liquidator-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.liquidator-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.liquidator-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx historical liquidity-provider-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.liquidity-provider-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.liquidity-provider-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx historical pyth-adapter-v1 (Pyth Core) | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.pyth-adapter-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.pyth-adapter-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx historical staking-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.staking-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.staking-v1?chain=mainnet&tab=overview) |
+| Mainnet | Granite: USDCx historical withdrawal-caps-v1 | [SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.withdrawal-caps-v1](https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.withdrawal-caps-v1?chain=mainnet&tab=overview) |

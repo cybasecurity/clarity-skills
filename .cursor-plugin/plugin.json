@@ -1,0 +1,25 @@
+{
+  "name": "clarity",
+  "displayName": "Clarity skills",
+  "version": "1.0.0",
+  "description": "Focused Clarity and Stacks skills for development, security, testing, fuzzing, wallets, environments, protocol integration, Bitcoin, deployment, governance, upgrades and SIP compliance.",
+  "author": {
+    "name": "Cyba Blockchain Security",
+    "url": "https://cybasecurity.io/",
+    "email": "contact@cybasecurity.io"
+  },
+  "homepage": "https://cybasecurity.io/",
+  "repository": "https://github.com/cybasecurity/clarity-skills",
+  "license": "MIT",
+  "keywords": [
+    "clarity",
+    "stacks",
+    "smart-contracts",
+    "security",
+    "sbtc",
+    "sip",
+    "fuzzing",
+    "rendezvous"
+  ],
+  "skills": "./skills/"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Testing"
+  short_description: "Write typed Clarity tests with Clarigen"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity:testing to set up Clarigen tests for this project, including contract-mediated callers."

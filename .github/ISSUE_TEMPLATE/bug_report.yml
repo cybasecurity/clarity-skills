@@ -1,0 +1,94 @@
+name: Bug report
+description: Report a wrong rule, address, signature, example or install step in the Clarity skills.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. A minimal example and a link to the evidence let us check and fix the problem quickly.
+
+        If the problem could lead to vulnerable code or lost funds, do not open an issue: report it privately as described in the [security policy](https://github.com/cybasecurity/clarity-skills/security/policy).
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skill
+      description: The skill or part of the repository the problem is in. Select all that apply.
+      multiple: true
+      options:
+        - clarity:start
+        - clarity:scholar
+        - clarity:security
+        - clarity:auditor
+        - clarity:testing
+        - clarity:fuzzing
+        - clarity:optimizer
+        - clarity:deployment
+        - clarity:upgrades
+        - clarity:governance
+        - clarity:epochs
+        - clarity:assets
+        - clarity:sip-compliance
+        - clarity:protocols
+        - clarity:ecosystem
+        - clarity:oracles
+        - clarity:staking
+        - clarity:bitcoin-proofs
+        - clarity:wallets
+        - clarity:environments
+        - clarity:apis
+        - clarity:system-integration
+        - Startup hook
+        - README or install steps
+        - Other or not sure
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: File
+      description: The file and, if you know it, the section.
+      placeholder: plugin/skills/security/SKILL.md, Security patterns
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Quote the rule, address, signature or example, and say what goes wrong when it is followed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should say
+      description: The correct rule, value or step.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: A minimal example and a link to the implementation, specification or chain evidence. For an address or signature, add the deployed contract's source, the deployment transaction and, for state, a read-only call result.
+    validations:
+      required: true
+  - type: input
+    id: clarity
+    attributes:
+      label: Clarity version and epoch
+      description: If the problem is about how Clarity code behaves.
+      placeholder: Clarity 6, epoch 4.0
+  - type: input
+    id: release
+    attributes:
+      label: Release or commit
+      description: The release from the changelog, or the commit you installed.
+      placeholder: "1.0.0"
+  - type: input
+    id: host
+    attributes:
+      label: Host and model
+      description: If the report is about what an agent did.
+      placeholder: Claude Code with Claude Opus 5.5
+  - type: checkboxes
+    id: not-security
+    attributes:
+      label: Not a security vulnerability
+      options:
+        - label: This is not a security vulnerability, so it is safe to report in public.
+          required: true

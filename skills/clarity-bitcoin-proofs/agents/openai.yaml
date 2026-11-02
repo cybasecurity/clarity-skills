@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Bitcoin Proofs"
+  short_description: "Verify Bitcoin proofs and sBTC settlement"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-bitcoin-proofs to verify Bitcoin outputs and implement the required proof or sBTC settlement flow."

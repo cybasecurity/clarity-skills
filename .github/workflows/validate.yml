@@ -1,0 +1,67 @@
+name: Validate
+
+# develop takes pull requests; main holds the latest release and takes pull requests only from develop or a
+# hotfix/ branch. The generated skills/ copy is regenerated at each release, so develop skips its check.
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Skills and manifests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Pull requests into main come from develop or a hotfix/ branch
+        if: github.base_ref == 'main'
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          case "$HEAD_REF" in
+            develop|hotfix/*) [ "$HEAD_REPO" = "$REPO" ] && exit 0 ;;
+          esac
+          echo "::error::Open pull requests against develop. main only takes releases from develop or a hotfix/ branch of this repository."
+          exit 1
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Check skills, generated copy, links and manifests
+        env:
+          TARGET: ${{ github.base_ref || github.ref_name }}
+        run: |
+          if [ "$TARGET" = main ]; then
+            python3 .github/scripts/check_package.py
+          else
+            python3 .github/scripts/check_package.py --develop
+          fi
+
+      - name: Compile bundled scripts
+        run: python3 -m py_compile plugin/skills/*/scripts/*.py skills/*/scripts/*.py
+
+      - name: Install Claude Code
+        run: npm install --no-save --no-audit --no-fund --prefix "$RUNNER_TEMP/claude" @anthropic-ai/claude-code@2.1.309
+
+      - name: Validate plugin and marketplace with Claude Code
+        run: |
+          "$RUNNER_TEMP/claude/node_modules/.bin/claude" plugin validate --strict plugin
+          "$RUNNER_TEMP/claude/node_modules/.bin/claude" plugin validate --strict .
+
+      - name: Check out main for the release check
+        if: github.base_ref == 'main'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          ref: main
+          path: .release-base
+          persist-credentials: false
+
+      - name: Release version and changelog
+        if: github.base_ref == 'main'
+        run: python3 .github/scripts/check_release.py .release-base

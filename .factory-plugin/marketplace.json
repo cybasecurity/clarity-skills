@@ -1,0 +1,17 @@
+{
+  "name": "clarity-skills",
+  "owner": {
+    "name": "Cyba Blockchain Security",
+    "email": "contact@cybasecurity.io"
+  },
+  "metadata": {
+    "description": "Clarity and Stacks agent skills: a router plus 21 focused skills for building, testing, auditing and shipping Clarity smart contracts."
+  },
+  "plugins": [
+    {
+      "name": "clarity",
+      "source": "./",
+      "description": "Focused Clarity and Stacks skills for development, security, testing, fuzzing, wallets, environments, protocol integration, Bitcoin, deployment, governance, upgrades and SIP compliance."
+    }
+  ]
+}

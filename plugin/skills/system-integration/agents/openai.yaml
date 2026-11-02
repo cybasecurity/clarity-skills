@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity System Integration"
+  short_description: "Resolve Stacks system contracts and addresses"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity:system-integration to resolve the correct boot contracts and standard trait principals for this network."

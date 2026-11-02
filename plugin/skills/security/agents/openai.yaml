@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Security"
+  short_description: "Implement secure Clarity authority and assets"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity:security to repair this caller and asset-handling code while preserving its trust model."

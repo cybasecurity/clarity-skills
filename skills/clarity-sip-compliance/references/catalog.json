@@ -1,0 +1,339 @@
+{
+  "retrieved": "2026-10-16",
+  "commit": "642af6804dacc80455c3d49ef66b62bc4fb209aa",
+  "proposals": [
+    {
+      "sip": 0,
+      "title": "Stacks Improvement Proposal Process",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Meta",
+      "path": "sips/sip-000/sip-000-stacks-improvement-proposal-process.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-000/sip-000-stacks-improvement-proposal-process.md"
+    },
+    {
+      "sip": 1,
+      "title": "Burn Election",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-001/sip-001-burn-election.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-001/sip-001-burn-election.md"
+    },
+    {
+      "sip": 2,
+      "title": "The Clarity Smart Contract Language",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-002/sip-002-smart-contract-language.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-002/sip-002-smart-contract-language.md"
+    },
+    {
+      "sip": 3,
+      "title": "Stacks P2P Network",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Standard",
+      "path": "sips/sip-003/sip-003-peer-network.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-003/sip-003-peer-network.md"
+    },
+    {
+      "sip": 4,
+      "title": "Cryptographic Commitment to Materialized Views",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-004/sip-004-materialized-view.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-004/sip-004-materialized-view.md"
+    },
+    {
+      "sip": 5,
+      "title": "Blocks, Transactions, and Accounts",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-005/sip-005-blocks-and-transactions.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-005/sip-005-blocks-and-transactions.md"
+    },
+    {
+      "sip": 6,
+      "title": "Clarity Execution Cost Assessment",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-006/sip-006-runtime-cost-assessment.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-006/sip-006-runtime-cost-assessment.md"
+    },
+    {
+      "sip": 7,
+      "title": "Stacking Consensus",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-007/sip-007-stacking-consensus.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-007/sip-007-stacking-consensus.md"
+    },
+    {
+      "sip": 8,
+      "title": "Clarity Parsing and Analysis Cost Assessment",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-008/sip-008-analysis-cost-assessment.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-008/sip-008-analysis-cost-assessment.md"
+    },
+    {
+      "sip": 9,
+      "title": "Standard Trait Definition for Non-Fungible Tokens",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Standard",
+      "path": "sips/sip-009/sip-009-nft-standard.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-009/sip-009-nft-standard.md"
+    },
+    {
+      "sip": 10,
+      "title": "Standard Trait Definition for Fungible Tokens",
+      "status": "Ratified",
+      "layer": "Traits",
+      "type": "Standard",
+      "path": "sips/sip-010/sip-010-fungible-token-standard.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-010/sip-010-fungible-token-standard.md"
+    },
+    {
+      "sip": 12,
+      "title": "Burn Height Selection for a Network Upgrade to Introduce New Cost-Limits",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-012/sip-012-cost-limits-network-upgrade.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-012/sip-012-cost-limits-network-upgrade.md"
+    },
+    {
+      "sip": 13,
+      "title": "Standard Trait Definition for Semi-Fungible Tokens",
+      "status": "Ratified",
+      "layer": "Traits",
+      "type": "Standard",
+      "path": "sips/sip-013/sip-013-semi-fungible-token-standard.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-013/sip-013-semi-fungible-token-standard.md"
+    },
+    {
+      "sip": 15,
+      "title": "Stacks Upgrade of Proof-of-Transfer and Clarity",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-015/sip-015-network-upgrade.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-015/sip-015-network-upgrade.md"
+    },
+    {
+      "sip": 16,
+      "title": "Schema Definition for Metadata for Digital Assets",
+      "status": "Ratified",
+      "layer": "Traits",
+      "type": "Standard",
+      "path": "sips/sip-016/sip-016-token-metadata.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-016/sip-016-token-metadata.md"
+    },
+    {
+      "sip": 18,
+      "title": "Signed Structured Data",
+      "status": "Ratified",
+      "layer": "Applications",
+      "type": "Standard",
+      "path": "sips/sip-018/sip-018-signed-structured-data.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-018/sip-018-signed-structured-data.md"
+    },
+    {
+      "sip": 19,
+      "title": "Notifications for Token Metadata Updates",
+      "status": "Ratified",
+      "layer": "Traits",
+      "type": "Standard",
+      "path": "sips/sip-019/sip-019-token-metadata-update-notifications.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-019/sip-019-token-metadata-update-notifications.md"
+    },
+    {
+      "sip": 20,
+      "title": "Bitwise Operations in Clarity",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-020/sip-020-bitwise-ops.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-020/sip-020-bitwise-ops.md"
+    },
+    {
+      "sip": 21,
+      "title": "Fast and Reliable Blocks through PoX-assisted Block Propagation",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-021/sip-021-nakamoto.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-021/sip-021-nakamoto.md"
+    },
+    {
+      "sip": 22,
+      "title": "Emergency Fix to PoX Stacking Increases",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-022/sip-022-emergency-pox-fix.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-022/sip-022-emergency-pox-fix.md"
+    },
+    {
+      "sip": 23,
+      "title": "Emergency Fix to Trait Invocation Behavior",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-023/sip-023-emergency-fix-traits.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-023/sip-023-emergency-fix-traits.md"
+    },
+    {
+      "sip": 24,
+      "title": "Emergency Fix to Data Validation and Serialization Behavior",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-024/sip-024-least-supertype-fix.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-024/sip-024-least-supertype-fix.md"
+    },
+    {
+      "sip": 25,
+      "title": "Iterating towards Weighted Schnorr Threshold Signatures",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-025/sip-025-iterating-towards-weighted-schnorr-threshold-signatures.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-025/sip-025-iterating-towards-weighted-schnorr-threshold-signatures.md"
+    },
+    {
+      "sip": 27,
+      "title": "Non-sequential Multisig Transactions",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus",
+      "path": "sips/sip-027/sip-027-non-sequential-multisig-transactions.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-027/sip-027-non-sequential-multisig-transactions.md"
+    },
+    {
+      "sip": 28,
+      "title": "Signer Criteria for sBTC, A Decentralized and Programmable Asset Backed 1:1 with BTC",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Operation",
+      "path": "sips/sip-028/sip-028-sbtc_peg.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-028/sip-028-sbtc_peg.md"
+    },
+    {
+      "sip": 29,
+      "title": "Preserving Economic Incentives During Stacks Network Upgrades",
+      "status": "Ratified",
+      "layer": null,
+      "type": "Consensus (hard fork)",
+      "path": "sips/sip-029/sip-029-halving-alignment.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-029/sip-029-halving-alignment.md"
+    },
+    {
+      "sip": 30,
+      "title": "Definition of a Modern Stacks Wallet Interface Standard",
+      "status": "Recommended",
+      "layer": null,
+      "type": "Standard",
+      "path": "sips/sip-030/sip-030-wallet-interface.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-030/sip-030-wallet-interface.md"
+    },
+    {
+      "sip": 31,
+      "title": "SIP-031: Five-Year Stacks Growth Emissions",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-031/sip-031.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-031/sip-031.md"
+    },
+    {
+      "sip": 33,
+      "title": "Clarity Smart Contract Language, version 4",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-033/sip-033-clarity4.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-033/sip-033-clarity4.md"
+    },
+    {
+      "sip": 34,
+      "title": "Dimension-Specific Tenure Extend Variants",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-034/sip-034.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-034/sip-034.md"
+    },
+    {
+      "sip": 35,
+      "title": "Clarification of Clarity's `secp256r1-verify` Behavior",
+      "status": "Ratified",
+      "layer": "Consensus",
+      "type": "Informational",
+      "path": "sips/sip-035/sip-secp256r1-verify.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-035/sip-secp256r1-verify.md"
+    },
+    {
+      "sip": 38,
+      "title": "Standard Trait Definition for Commitment-Based Private Metadata (Encrypted NFTs)",
+      "status": "Draft",
+      "layer": "Trait",
+      "type": "Standard",
+      "path": "sips/sip-038/sip-enft-private-layer.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-038/sip-enft-private-layer.md"
+    },
+    {
+      "sip": 39,
+      "title": "Clarity 5: Fixing known issues in Clarity",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-039/sip-039-clarity5.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-039/sip-039-clarity5.md"
+    },
+    {
+      "sip": 40,
+      "title": "Improved Post-Conditions",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-040/sip-040-post-conds.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-040/sip-040-post-conds.md"
+    },
+    {
+      "sip": 42,
+      "title": "Removal of `at-block`",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-042/sip-042.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-042/sip-042.md"
+    },
+    {
+      "sip": 44,
+      "title": "Clarity 6, staking and PoX post-conditions, and removal of the cost-voting contract",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-044/sip-044-clarity6.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-044/sip-044-clarity6.md"
+    },
+    {
+      "sip": 45,
+      "title": "PoX-5: Bitcoin Staking and Emission Schedule Alignment",
+      "status": "Ratified",
+      "layer": "Consensus (hard fork)",
+      "type": "Consensus",
+      "path": "sips/sip-045/sip-045-pox-5-bitcoin-staking.md",
+      "url": "https://github.com/stacksgov/sips/blob/642af6804dacc80455c3d49ef66b62bc4fb209aa/sips/sip-045/sip-045-pox-5-bitcoin-staking.md"
+    }
+  ]
+}

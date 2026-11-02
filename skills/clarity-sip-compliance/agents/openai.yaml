@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity SIP Compliance"
+  short_description: "Check and implement Clarity SIP conformance"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.png"
+  brand_color: "#B47514"
+  default_prompt: "Use $clarity-sip-compliance to check and implement the applicable SIP requirements for this token."
